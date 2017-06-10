@@ -10,7 +10,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170610230458) do
+ActiveRecord::Schema.define(version: 20170610232428) do
+
+  create_table "archives", force: :cascade do |t|
+    t.integer  "issue_id"
+    t.datetime "conf_date"
+    t.string   "conf_location"
+    t.string   "facebookEvent"
+    t.integer  "time"
+    t.string   "video"
+    t.string   "audio"
+    t.string   "speaker"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.index ["issue_id"], name: "index_archives_on_issue_id"
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.text     "text"
+    t.integer  "user_id"
+    t.integer  "issue_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["issue_id"], name: "index_comments_on_issue_id"
+    t.index ["user_id"], name: "index_comments_on_user_id"
+  end
+
+  create_table "issues", force: :cascade do |t|
+    t.string   "label"
+    t.text     "description"
+    t.string   "tag"
+    t.integer  "user_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["user_id"], name: "index_issues_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
