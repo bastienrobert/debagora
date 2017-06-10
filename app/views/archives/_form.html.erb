@@ -1,0 +1,57 @@
+<%= form_for(archive) do |f| %>
+  <% if archive.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(archive.errors.count, "error") %> prohibited this archive from being saved:</h2>
+
+      <ul>
+      <% archive.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :issue_id %>
+    <%= f.text_field :issue_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :conf_date %>
+    <%= f.datetime_select :conf_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :conf_location %>
+    <%= f.text_field :conf_location %>
+  </div>
+
+  <div class="field">
+    <%= f.label :facebookEvent %>
+    <%= f.text_field :facebookEvent %>
+  </div>
+
+  <div class="field">
+    <%= f.label :time %>
+    <%= f.number_field :time %>
+  </div>
+
+  <div class="field">
+    <%= f.label :video %>
+    <%= f.text_field :video %>
+  </div>
+
+  <div class="field">
+    <%= f.label :audio %>
+    <%= f.text_field :audio %>
+  </div>
+
+  <div class="field">
+    <%= f.label :speaker %>
+    <%= f.text_field :speaker %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

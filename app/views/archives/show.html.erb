@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Issue:</strong>
+  <%= @archive.issue %>
+</p>
+
+<p>
+  <strong>Conf date:</strong>
+  <%= @archive.conf_date %>
+</p>
+
+<p>
+  <strong>Conf location:</strong>
+  <%= @archive.conf_location %>
+</p>
+
+<p>
+  <strong>Facebookevent:</strong>
+  <%= @archive.facebookEvent %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @archive.time %>
+</p>
+
+<p>
+  <strong>Video:</strong>
+  <%= @archive.video %>
+</p>
+
+<p>
+  <strong>Audio:</strong>
+  <%= @archive.audio %>
+</p>
+
+<p>
+  <strong>Speaker:</strong>
+  <%= @archive.speaker %>
+</p>
+
+<%= link_to 'Edit', edit_archive_path(@archive) %> |
+<%= link_to 'Back', archives_path %>

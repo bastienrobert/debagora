@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Archives</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Issue</th>
+      <th>Conf date</th>
+      <th>Conf location</th>
+      <th>Facebookevent</th>
+      <th>Time</th>
+      <th>Video</th>
+      <th>Audio</th>
+      <th>Speaker</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @archives.each do |archive| %>
+      <tr>
+        <td><%= archive.issue %></td>
+        <td><%= archive.conf_date %></td>
+        <td><%= archive.conf_location %></td>
+        <td><%= archive.facebookEvent %></td>
+        <td><%= archive.time %></td>
+        <td><%= archive.video %></td>
+        <td><%= archive.audio %></td>
+        <td><%= archive.speaker %></td>
+        <td><%= link_to 'Show', archive %></td>
+        <td><%= link_to 'Edit', edit_archive_path(archive) %></td>
+        <td><%= link_to 'Destroy', archive, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Archive', new_archive_path %>
