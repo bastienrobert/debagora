@@ -20,5 +20,10 @@
   <%= @issue.user %>
 </p>
 
+<p>
+  <strong>Likes:</strong>
+  <%= @issue.likes.count %>
+</p>
+
 <%= link_to 'Edit', edit_issue_path(@issue) %> |
 <%= link_to 'Back', issues_path %>

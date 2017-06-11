@@ -21,6 +21,14 @@ class IssuesController < ApplicationController
   def edit
   end
 
+  # POST /issues/1
+  def like
+    @issue.like(current_user)
+  end
+  def unlike
+    @issue.unlike(current_user)
+  end
+
   # POST /issues
   # POST /issues.json
   def create
