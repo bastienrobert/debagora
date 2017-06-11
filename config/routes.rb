@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :wikis
   # ROOT
   root "application#home"
 
