@@ -10,7 +10,9 @@ class Issue < ApplicationRecord
 
   # unlike the post
   def unlike!(user)
-    likes.where(user_id: user.id).first.destroy
+    if likes.where(user_id: user.id).any?
+      likes.where(user_id: user.id).first.destroy
+    end
   end
 
   # do user like post

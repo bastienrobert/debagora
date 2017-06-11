@@ -23,10 +23,12 @@ class IssuesController < ApplicationController
 
   # POST /issues/1
   def like
-    @issue.like(current_user)
+    @issue = Issue.find(params[:id])
+    @issue.like!(current_user)
   end
   def unlike
-    @issue.unlike(current_user)
+    @issue = Issue.find(params[:id])
+    @issue.unlike!(current_user)
   end
 
   # POST /issues

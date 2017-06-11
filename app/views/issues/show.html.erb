@@ -23,6 +23,14 @@
 <p>
   <strong>Likes:</strong>
   <%= @issue.likes.count %>
+  <%= @issue.likes?(current_user) %>
+  <br>
+  <%= form_tag(action: "like", method: "post") do %>
+    <%= submit_tag("Like") %>
+  <% end %>
+  <%= form_tag(action: "unlike", method: "post") do %>
+    <%= submit_tag("Unlike") %>
+  <% end %>
 </p>
 
 <%= link_to 'Edit', edit_issue_path(@issue) %> |
