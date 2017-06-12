@@ -1,5 +1,6 @@
 class WikisController < ApplicationController
   before_action :set_wiki, only: [:show, :edit, :update, :destroy]
+  authorize_resource
 
   # GET /wikis
   # GET /wikis.json

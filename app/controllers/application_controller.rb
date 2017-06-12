@@ -28,4 +28,9 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  # CanCan redirect if don't have permissions
+  rescue_from CanCan::AccessDenied do |exception|
+    redirect_to new_user_session_path, notify: "Oups... Accès interdit !"
+  end
+
 end
