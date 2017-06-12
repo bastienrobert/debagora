@@ -21,6 +21,13 @@
 </p>
 
 <p>
+  <strong>Undefined issues:</strong><br>
+  <% @issue.wikis.each do |wiki| %>
+    <%= link_to wiki.undefined, wiki %><br>
+  <% end %>
+</p>
+
+<p>
   <strong>Likes:</strong>
   <%= @issue.likes.count %>
   <%= @issue.likes?(current_user) if user_signed_in? %>

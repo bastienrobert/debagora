@@ -10,5 +10,12 @@
   <%= @wiki.content %>
 </p>
 
+<p>
+  <strong>Related issues:</strong><br>
+  <% @wiki.issues.each do |issue| %>
+    <%= link_to issue.label, issue %><br>
+  <% end %>
+</p>
+
 <%= link_to 'Edit', edit_wiki_path(@wiki) %> |
 <%= link_to 'Back', wikis_path %>
