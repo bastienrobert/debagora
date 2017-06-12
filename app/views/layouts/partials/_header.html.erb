@@ -1,0 +1,20 @@
+<header>
+  <div>
+    <%= link_to root_path do %>
+      <%= image_tag 'debagora-logo.svg' %>
+    <% end %>
+    <nav>
+      <ul>
+        <li <%= "class=active" if current_page?(root_path) %>><%= link_to "accueil", root_path %></li>
+        <li <%= "class=active" if current_page?(issues_path) %>><%= link_to "problématiques", issues_path %></li>
+        <li <%= "class=active" if current_page?(archives_path) %>><%= link_to "archives", archives_path %></li>
+        <li <%= "class=active" if current_page?(wikis_path) %>><%= link_to "wiki", wikis_path %></li>
+        <li <%= "class=active" if current_page?(live_path) %>><%= link_to "live", live_path %></li>
+      </ul>
+    </nav>
+  </div>
+  <%= link_to new_user_session_path, id: "session_path" do %>
+    <%= image_tag 'icons/session_path-icon.svg' %>
+    Connexion
+  <% end %>
+</header>
