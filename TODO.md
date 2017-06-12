@@ -27,3 +27,6 @@
     - show
 
 - Live page : use YouTube API to see if we're on live
+- Issue belongs to an User (only the owner can edit it)
+- Wiki can be submit by mail
+- Archive and Wiki belongs to an ADMIN (User cant edit)
