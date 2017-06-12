@@ -16,16 +16,10 @@ class ApplicationController < ActionController::Base
 
   end
   def live
-    request = "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UC704-gdkAeYFEjudxRCEAJA&type=video&eventType=live&key=AIzaSyC2KdtINnW47ait53QbE82kpGqm8_zocz8"
+    request = "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCpO0OSNAFLRUpGrNz-bJJHA&type=video&eventType=live&key=AIzaSyC2KdtINnW47ait53QbE82kpGqm8_zocz8"
     resp = Net::HTTP.get_response(URI.parse(request))
     data = resp.body
-    json = JSON.parse(data)
-
-    if json["pageInfo"]["totalResults"] >= 1
-      @final = json["items"][0]["snippet"]["description"]
-    else
-      @final = "off live"
-    end
+    @json = JSON.parse(data)
   end
 
   # CanCan redirect if don't have permissions

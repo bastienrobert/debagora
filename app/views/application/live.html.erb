@@ -1,1 +1,14 @@
-<%= @final %>
+<% if @json["pageInfo"]["totalResults"] >= 1 %>
+  En live
+<% else %>
+  Off live
+<% end %>
+<br><br>
+
+<iframe src="https://www.youtube.com/embed/<%= @json["items"][0]["id"]["videoId"] %>"></iframe><br>
+<strong>Channel</strong><br>
+<a href="https://www.youtube.com/channel/<%= @json["items"][0]["snippet"]["channelId"] %>"><%= @json["items"][0]["snippet"]["channelTitle"] %></a><br>
+<strong>Title</strong><br>
+<%= @json["items"][0]["snippet"]["title"] %><br>
+<strong>Decription</strong><br>
+<%= @json["items"][0]["snippet"]["description"] %>
