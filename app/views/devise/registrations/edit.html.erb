@@ -31,6 +31,12 @@
     <%= f.text_area :bio %>
   </div>
 
+  <% if current_user.admin? %>
+    <div class="field">
+      Administrateur
+    </div>
+  <% end %>
+
   <div class="field">
     <%= f.label :country %><br />
     <%= country_select("user", "country", priority_countries: ["FR", "GB", "ES", "US"]) %>
