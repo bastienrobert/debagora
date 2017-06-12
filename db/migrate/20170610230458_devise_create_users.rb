@@ -9,6 +9,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
       t.string :country,            null: true
       t.string :region,             null: true
       t.text :bio,                  null: true
+      t.boolean :admin,             null: false, default: false
 
       ## Recoverable
       t.string   :reset_password_token
