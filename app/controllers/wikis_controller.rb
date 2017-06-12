@@ -16,8 +16,6 @@ class WikisController < ApplicationController
   # GET /wikis/a
   # GET /wikis/a.json
   def letter
-    # @wikis = Wiki.find(params[:undefined])
-    # @wikis = Wiki.where(undefined: params[:undefined])
     @wikis = Wiki.where("undefined LIKE :prefix", prefix: "#{params[:undefined]}%")
   end
 
