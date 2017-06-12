@@ -33,5 +33,21 @@
   <% end %>
 </p>
 
+<div>
+  <strong>Commentaires:</strong><br>
+    <% @issue.comments.each do |comment| %>
+      <%= comment.text %> par
+      <%= comment.user.firstname %> <%= comment.user.lastname %><br>
+    <% end %>
+
+    <br><br>
+
+  <% if user_signed_in? %>
+    <strong>Ajouter un commentaire:</strong><br>
+    <%= render "comments/form", :comment => @comment %>
+  <% end %>
+
+</div>
+
 <%= link_to 'Edit', edit_issue_path(@issue) %> |
 <%= link_to 'Back', issues_path %>

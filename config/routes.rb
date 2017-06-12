@@ -6,9 +6,10 @@ Rails.application.routes.draw do
   root "application#home"
 
   # Include ressources
-  resources :comments
   resources :archives
-  resources :issues
+  resources :issues do
+    resources :comments, only: [:create, :edit, :destroy]
+  end
 
   # Issues special routes
   post '/issues/:id/like', to: 'issues#like'
