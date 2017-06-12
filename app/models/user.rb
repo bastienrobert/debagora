@@ -29,6 +29,15 @@ class User < ApplicationRecord
     end
   end
 
+  # Am i admin ?
+  def is_admin?
+    if self.admin == true
+      return true
+    else
+      return false
+    end
+  end
+
 
   ## Paperclip avatar
   has_attached_file :avatar, styles: {
