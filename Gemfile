@@ -24,12 +24,16 @@ gem 'aws-sdk'
 ## Authentification gems
 # Global
 gem 'devise'
-# Countries
-gem 'country_select'
+# Rails admin (because we're great administrators)
+gem 'rails_admin'
+# Permissions gem
+gem 'cancancan'
 # Social
 gem 'omniauth'
 gem 'omniauth-facebook'
 ## End of authentification
+# Countries
+gem 'country_select'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -41,9 +45,6 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
-# Rails admin (because we're great administrators)
-gem 'rails_admin'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
