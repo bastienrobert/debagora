@@ -23,7 +23,7 @@
 <p>
   <strong>Likes:</strong>
   <%= @issue.likes.count %>
-  <%= @issue.likes?(current_user) %>
+  <%= @issue.likes?(current_user) if user_signed_in? %>
   <br>
   <%= form_tag(action: "like", method: "post") do %>
     <%= submit_tag("Like") %>
