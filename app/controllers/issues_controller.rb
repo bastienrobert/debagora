@@ -21,6 +21,10 @@ class IssuesController < ApplicationController
 
   # GET /issues/1/edit
   def edit
+    @wiki_ids = []
+    @issue.wikis.each do |w|
+      @wiki_ids << w.id
+    end
   end
 
   # POST /issues/1
@@ -37,7 +41,9 @@ class IssuesController < ApplicationController
   # POST /issues.json
   def create
     @issue = current_user.issues.new(issue_params)
-
+    params[:issue][:wikis].each do |w|
+      @issue.wikis << Wiki.find(w)
+    end
     respond_to do |format|
       if @issue.save
         format.html { redirect_to @issue, notice: 'Issue was successfully created.' }
@@ -52,6 +58,10 @@ class IssuesController < ApplicationController
   # PATCH/PUT /issues/1
   # PATCH/PUT /issues/1.json
   def update
+    @issue.wikis.clear
+    params[:issue][:wikis].each do |w|
+      @issue.wikis << Wiki.find(w) if w != ""
+    end
     respond_to do |format|
       if @issue.update(issue_params)
         format.html { redirect_to @issue, notice: 'Issue was successfully updated.' }
