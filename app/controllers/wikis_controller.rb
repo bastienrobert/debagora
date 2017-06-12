@@ -13,6 +13,14 @@ class WikisController < ApplicationController
   def show
   end
 
+  # GET /wikis/a
+  # GET /wikis/a.json
+  def letter
+    # @wikis = Wiki.find(params[:undefined])
+    # @wikis = Wiki.where(undefined: params[:undefined])
+    @wikis = Wiki.where("undefined LIKE :prefix", prefix: "#{params[:undefined]}%")
+  end
+
   # GET /wikis/new
   def new
     @wiki = Wiki.new

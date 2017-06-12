@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  resources :wikis
+
   # ROOT
   root "application#home"
 
@@ -10,6 +10,10 @@ Rails.application.routes.draw do
   resources :issues do
     resources :comments, only: [:create, :edit, :destroy]
   end
+  resources :wikis
+
+  # Wikis special routes
+  get '/wikis/letter/:undefined', to: 'wikis#letter'
 
   # Issues special routes
   post '/issues/:id/like', to: 'issues#like'
