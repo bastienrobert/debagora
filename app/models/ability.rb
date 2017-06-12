@@ -14,19 +14,14 @@ class Ability
     can :read, Comment
 
     # If user logged
-      if user && user.id
-        # If user is just logged in
-        can [:like, :unlike, :create], Issue
-        can :create, Comment
+    if user && user.id
+      # If user is just logged in
+      can [:like, :unlike, :create], Issue
+      can :create, Comment
 
-        # If user logged is the owner
-        can :crud, Issue, {user_id: user.id}
-        can :crud, Comment, {user_id: user.id}
-      end
-
-    # ADMIN
-    if user.admin?
-      can :manage, :all
+      # If user logged is the owner
+      can :crud, Issue, {user_id: user.id}
+      can :crud, Comment, {user_id: user.id}
     end
 
   end

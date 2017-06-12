@@ -21,7 +21,7 @@ RailsAdmin.config do |config|
 
   ## == Gravatar integration ==
   ## To disable Gravatar integration in Navigation Bar set to false
-  # config.show_gravatar true
+  # config.show_gravatar false
 
   config.actions do
     dashboard                     # mandatory
@@ -33,9 +33,18 @@ RailsAdmin.config do |config|
     edit
     delete
     show_in_app
+  end
+
+  RailsAdmin.config do |config|
+    config.authorize_with do
+      authenticate_or_request_with_http_basic('Site Message') do |username, password|
+        username == ENV["ADMIN_LOGIN"] && password == ENV["ADMIN_PASSWORD"]
+      end
+    end
+    config.main_app_name { ['My App', 'Admin'] }
+  end
 
     ## With an audit adapter, you can add:
     # history_index
     # history_show
-  end
 end
