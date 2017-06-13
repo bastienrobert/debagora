@@ -1,16 +1,22 @@
-<% if @json["pageInfo"]["totalResults"] >= 1 %>
-  En live
-<% else %>
-  Off live
-<% end %>
-<br><br>
+<section id="live">
+  <div id="video-chat">
+    <iframe src="https://www.youtube.com/embed/<%= @json["items"][0]["id"]["videoId"] %>" class="video"></iframe>
+    <iframe src="https://www.youtube.com/live_chat?v=<%= @json["items"][0]["id"]["videoId"] %>&embed_domain=localhost" frameborder="0" class="chat"></iframe>
+  </div>
 
-<iframe src="https://www.youtube.com/embed/<%= @json["items"][0]["id"]["videoId"] %>"></iframe><br>
-<strong>Channel</strong><br>
-<a href="https://www.youtube.com/channel/<%= @json["items"][0]["snippet"]["channelId"] %>"><%= @json["items"][0]["snippet"]["channelTitle"] %></a><br>
-<strong>Title</strong><br>
-<%= @json["items"][0]["snippet"]["title"] %><br>
-<strong>Decription</strong><br>
-<%= @json["items"][0]["snippet"]["description"] %><br>
-<strong>Chat</strong><br>
-<iframe src="https://www.youtube.com/live_chat?v=<%= @json["items"][0]["id"]["videoId"] %>&embed_domain=localhost" frameborder="0"></iframe>
+  <div id="content">
+    <span id="label">
+    <% if @json["pageInfo"]["totalResults"] >= 1 %>
+      Live
+    <% else %>
+      Hors live
+    <% end %>
+    </span>
+
+    <h2><%= @json["items"][0]["snippet"]["title"] %></h2>
+
+    <p><%= @json["items"][0]["snippet"]["description"] %></p>
+
+  </div>
+
+</section>
