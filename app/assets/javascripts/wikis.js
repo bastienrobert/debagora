@@ -65,12 +65,11 @@ function bigCharArray(key) {
 // Launch function if element 'alphabet' exists
 if (document.getElementById("alphabet")){
   layoutCharArray();
+  // Detect keypressed
+  document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.keyCode > 64 && evt.keyCode < 91 || evt.keyCode == 37 || evt.keyCode == 39) {
+      bigCharArray(evt.keyCode);
+    }
+  };
 }
-
-// Detect keypressed
-document.onkeydown = function(evt) {
-  evt = evt || window.event;
-  if (evt.keyCode > 64 && evt.keyCode < 91 || evt.keyCode == 37 || evt.keyCode == 39) {
-    bigCharArray(evt.keyCode);
-  }
-};
