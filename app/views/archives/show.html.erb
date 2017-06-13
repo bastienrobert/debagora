@@ -1,54 +1,44 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Issue:</strong>
-  <%= @archive.issue %>
-</p>
-
-<p>
-  <strong>Conf date:</strong>
-  <%= @archive.conf_date %>
-</p>
-
-<p>
-  <strong>Resume:</strong>
-  <%= @archive.resume %>
-</p>
-
-<p>
-  <strong>Issue answer:</strong>
-  <%= @archive.issue.description %>
-</p>
-
-<p>
-  <strong>Conf location:</strong>
-  <%= @archive.conf_location %>
-</p>
-
-<p>
-  <strong>Facebookevent:</strong>
-  <%= @archive.facebookEvent %>
-</p>
-
-<p>
-  <strong>Time:</strong>
-  <%= @archive.time %>
-</p>
-
-<p>
-  <strong>Video:</strong>
-  <%= @archive.video %>
-</p>
-
-<p>
-  <strong>Audio:</strong>
-  <%= @archive.audio %>
-</p>
-
-<p>
-  <strong>Speaker:</strong>
-  <%= @archive.speaker %>
-</p>
-
-<%= link_to 'Edit', edit_archive_path(@archive) %> |
-<%= link_to 'Back', archives_path %>
+<section id="archives" class="show">
+  <%= link_to '', issues_path, class: "close" %>
+  <h1><%= @archive.issue.label %></h1>
+  <div class="informations">
+    <ul>
+      <li><em>Date : </em><%= @archive.created_at %></li>
+      <li><em>Horaire : </em><%= @archive.conf_date %></li>
+      <li><em>Lieu : </em><%= @archive.conf_location %></li>
+      <li><em>Intervenant : </em><%= @archive.speaker %></li>
+    </ul>
+  </div>
+  <div class="answer">
+    <h3>Résumé du débat</h3>
+    <%= @archive.resume %>
+  </div>
+  <div class="wikis">
+    <% @archive.issue.wikis.each do |wiki| %>
+      <a href="#"><%= wiki.undefined %></a>
+    <% end %>
+  </div>
+  <div class="answer">
+    <h3>Vidéo</h3>
+    <iframe src="https://www.youtube.com/embed/<%= @archive.video %>" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="answer">
+    <h3>Réponse de <%= @archive.issue.user.firstname %> <%= @archive.issue.user.lastname %></h3>
+    <%= @archive.issue.description %>
+  </div>
+  <h3>Commentaires sur la problématique</h3>
+  <div id="comments">
+    <% @archive.issue.comments.each do |comment| %>
+    <div class="comment">
+      <div class="details">
+        <img src="http://placehold.it/200x200" alt="">
+        <div class="name-date">
+          <span><%= comment.user.firstname %> <%= comment.user.lastname %></span>
+          <span><%= comment.created_at %></span>
+        </div>
+      </div>
+      <p><%= comment.text %></p>
+    </div>
+    <% end %>
+  </div>
+</section>
