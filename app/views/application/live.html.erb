@@ -11,4 +11,6 @@
 <strong>Title</strong><br>
 <%= @json["items"][0]["snippet"]["title"] %><br>
 <strong>Decription</strong><br>
-<%= @json["items"][0]["snippet"]["description"] %>
+<%= @json["items"][0]["snippet"]["description"] %><br>
+<strong>Chat</strong><br>
+<iframe src="https://www.youtube.com/live_chat?v=<%= @json["items"][0]["id"]["videoId"] %>&embed_domain=localhost" frameborder="0"></iframe>
