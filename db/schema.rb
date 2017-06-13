@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(version: 20170611155506) do
 
   create_table "archives", force: :cascade do |t|
     t.integer  "issue_id"
+    t.text     "resume"
     t.datetime "conf_date"
     t.string   "conf_location"
     t.string   "facebookEvent"

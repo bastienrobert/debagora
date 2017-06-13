@@ -70,6 +70,6 @@ class ArchivesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def archive_params
-      params.require(:archive).permit(:issue_id, :conf_date, :conf_location, :facebookEvent, :time, :video, :audio, :speaker)
+      params.require(:archive).permit(:issue_id, :resume, :conf_date, :conf_location, :facebookEvent, :time, :video, :audio, :speaker)
     end
 end
