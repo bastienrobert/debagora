@@ -1,0 +1,30 @@
+.input {
+  &.iconed {
+    &.mail {
+      background: #FFF;
+      border: 1px solid #D9D9D9;
+      display: inline-block;
+      padding: 10px 8px 6px 8px;
+      height: 1.6em;
+      span {
+        display: inline-block;
+        background-image: url(asset-path('icons/form_mail-icon.svg'));
+        background-position: center 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 1.1em;
+        width: 1.1em;
+        padding-right: 2px;
+        margin-right: 2px;
+      }
+      input[type="email"] {
+        border: none;
+        background: transparent;
+        font-size: 1.05em;
+        font-family: 'Raleway', sans-serif;
+        vertical-align: 4.5px;
+        min-width: 15em;
+      }
+    }
+  }
+}

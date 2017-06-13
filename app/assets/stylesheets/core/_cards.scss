@@ -1,0 +1,36 @@
+#card {
+  background-color: #FFF;
+  padding: 2em;
+  min-height: 10em;
+  text-align: left;
+  .date {
+    display: inline-block;
+    border: 2px solid $master-green;
+    padding: 2px 5px 5.5px;
+    height: 2.4em;
+    width: 2.4em;
+    line-height: 1.3em;
+    font-weight: 600;
+    text-align: center;
+  }
+  h4 {
+    display: inline-block;
+    vertical-align: 10px;
+    font-size: 1.8em;
+    margin-left: .8em;
+    &:after {
+      content: "";
+      display:block;
+      position: relative;
+      background-color: $master-green;
+      border: none;
+      height: 3px;
+      width: 150px;
+      margin-top: 6px;
+      margin-left: 2px;
+    }
+  }
+  p {
+    margin-top: 2.5em;
+  }
+}

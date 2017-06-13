@@ -10,7 +10,14 @@ class ApplicationController < ActionController::Base
 
   # Static pages
   def home
-
+    @issues = Issue.all
+    maxLikes = 0
+    @issues.each do |issue|
+      if issue.likes.count > maxLikes
+        @issue = issue
+        maxLikes = issue.likes.count
+      end
+    end
   end
   def about
 

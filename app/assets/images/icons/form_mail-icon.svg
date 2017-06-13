@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.4">
+        <g id="Home-Page" transform="translate(-466.000000, -2101.000000)" fill="#AAAAAA">
+            <g id="Newsletters" transform="translate(321.000000, 1866.000000)">
+                <g id="Group-2" transform="translate(125.000000, 217.000000)">
+                    <path d="M37.9999989,18 L21.9999999,18 C20.9,18 20.01,18.9 20.01,19.9999999 L20,31.9999992 C20,33.0999994 20.9,33.999999 21.9999999,33.999999 L37.9999989,33.999999 C39.0999992,33.999999 39.9999988,33.0999994 39.9999988,31.9999992 L39.9999988,19.9999999 C39.9999988,18.9 39.0999992,18 37.9999989,18 Z M37.9999989,31.9999992 L21.9999999,31.9999992 L21.9999999,21.9999998 L29.9999994,26.9999995 L37.9999989,21.9999998 L37.9999989,31.9999992 Z M29.9999994,24.9999996 L21.9999999,19.9999999 L37.9999989,19.9999999 L29.9999994,24.9999996 Z" id="Fill-2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,62 @@
+<section id="home">
+  <div id="background-circle"></div>
+  <h1>Ensemble, préservons le savoir</h1>
+  <h2>Crée une problématique et rejoins les débats en live</h2>
+  <div id="main-element"></div>
+  <% if user_signed_in? %>
+    <%= link_to "Ajouter une problématique", new_issue_path, class: "btn btn-main" %>
+  <% else %>
+    <%= link_to "S'inscrire", new_user_registration_path, class: "btn btn-main" %>
+  <% end %>
+  <h3>Qu'est-ce que Debagora</h3>
+  <div class="grid">
+    <div class="bloc">
+      <h4>Problématique</h4>
+      <p>Créé une problématique, trouve des mots-clefs et rajoute un premier élément de réponses pour des sujets de débats.</p>
+    </div>
+    <div class="bloc">
+      <h4>Débats</h4>
+      <p>Participez réellement ou en ligne et en temps réels aux différents débats proposés sur la plateforme de Debagora.</p>
+    </div>
+    <div class="bloc">
+      <h4>Archives</h4>
+      <p>Retrouvez à n’importe quel moment toutes les informations dont vous avez besoin sur un débat passé.</p>
+    </div>
+  </div>
+  <div id="events">
+    <h3>Evenements en cours</h3>
+    <div id="slider">
+      <div id="card">
+        <div class="date">
+          <%= @issue.created_at.strftime("%d") %>
+          <br>
+          <%= @issue.created_at.strftime("%B").split(//).first(4).join("").to_s %>
+        </div>
+        <h4><%= @issue.label %></h4>
+        <p><%= @issue.description %></p>
+      </div>
+    </div>
+  </div>
+  <div id="newsletter">
+    <h3>Abonnez-vous</h3>
+    <h5>Ne manquez plus aucun débat sur notre plateforme.</h5>
+    <form action="//debagora.us15.list-manage.com/subscribe/post?u=c30bcc456a9ec1c5062eaa417&amp;id=132c0b9fa2" class="newsletter validate" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
+       <div>
+          <div class="input iconed mail">
+             <span></span>
+             <input type="email" value="" name="EMAIL" placeholder="Email" id="mce-EMAIL">
+          </div>
+          <div id="mce-responses" class="clear">
+             <div class="response" id="mce-error-response" style="display:none"></div>
+             <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c30bcc456a9ec1c5062eaa417_132c0b9fa2" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="S'inscrire" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default"></div>
+       </div>
+    </form>
+  </div>
+  <div id="social">
+    <a href="#" class="twitter"></a>
+    <a href="#" class="facebook"></a>
+  </div>
+</section>
