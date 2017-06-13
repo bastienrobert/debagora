@@ -25,7 +25,7 @@
   </div>
   <div class="wikis">
     <% @issue.wikis.each do |wiki| %>
-      <a href="#"><%= wiki.undefined %></a>
+      <%= link_to wiki.undefined, wiki_letter_path(wiki.undefined.first) %>
     <% end %>
   </div>
   <h3>Commentaires</h3>
