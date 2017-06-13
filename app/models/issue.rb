@@ -3,6 +3,7 @@ class Issue < ApplicationRecord
   has_and_belongs_to_many :wikis
   has_many :comments
   has_many :likes
+  has_one :archive
 
   # like the post
   def like!(user)
