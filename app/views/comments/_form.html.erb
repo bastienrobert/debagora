@@ -11,12 +11,8 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :text %>
-    <%= f.text_area :text %>
-  </div>
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <%= f.text_area :text, placeholder: "Votre commentaire..." %>
+    <%= f.submit 'Publiez', class: "btn btn-default" %>
+
 <% end %>

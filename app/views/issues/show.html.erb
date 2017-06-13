@@ -1,55 +1,58 @@
-<p id="notice"><%= notice %></p>
+<section id="issues" class="show">
+  <%= link_to '', issues_path, class: "close" %>
+  <h1><%= @issue.label %></h1>
+  <div class="informations">
+    <ul>
+      <li><em>Date : </em><%= @issue.created_at %></li>
+      <li><em>Auteur : </em><%= @issue.user.firstname %> <%= @issue.user.lastname %></li>
 
-<p>
-  <strong>Label:</strong>
-  <%= @issue.label %>
-</p>
+      <%= @issue.likes?(current_user) if user_signed_in? %>
+      <br>
+      <%= form_tag(action: "like", method: "post") do %>
+        <%= submit_tag("Like") %>
+      <% end %>
+      <%= form_tag(action: "unlike", method: "post") do %>
+        <%= submit_tag("Unlike") %>
+      <% end %>
 
-<p>
-  <strong>Description:</strong>
-  <%= @issue.description %>
-</p>
 
-<p>
-  <strong>User:</strong>
-  <%= @issue.user %>
-</p>
-
-<p>
-  <strong>Undefined issues:</strong><br>
-  <% @issue.wikis.each do |wiki| %>
-    <%= link_to wiki.undefined, wiki %><br>
-  <% end %>
-</p>
-
-<p>
-  <strong>Likes:</strong>
-  <%= @issue.likes.count %>
-  <%= @issue.likes?(current_user) if user_signed_in? %>
-  <br>
-  <%= form_tag(action: "like", method: "post") do %>
-    <%= submit_tag("Like") %>
-  <% end %>
-  <%= form_tag(action: "unlike", method: "post") do %>
-    <%= submit_tag("Unlike") %>
-  <% end %>
-</p>
-
-<div>
-  <strong>Commentaires:</strong><br>
-    <% @issue.comments.each do |comment| %>
-      <%= comment.text %> par
-      <%= comment.user.firstname %> <%= comment.user.lastname %><br>
+      <li class="icons"><span class="heart"></span><em><%= @issue.likes.count %></em></li>
+    </ul>
+  </div>
+  <div class="answer">
+    <h3>Réponse utilisateur</h3>
+    <%= @issue.description %>
+  </div>
+  <div class="wikis">
+    <% @issue.wikis.each do |wiki| %>
+      <a href="#"><%= wiki.undefined %></a>
     <% end %>
-
-    <br><br>
-
-  <% if user_signed_in? %>
-    <strong>Ajouter un commentaire:</strong><br>
-    <%= render "comments/form", :comment => @comment %>
-  <% end %>
-
-</div>
-
-<%= link_to 'Edit', edit_issue_path(@issue) %> |
-<%= link_to 'Back', issues_path %>
+  </div>
+  <h3>Commentaires</h3>
+  <div id="comments">
+    <% @issue.comments.each do |comment| %>
+    <div class="comment">
+      <div class="details">
+        <img src="http://placehold.it/200x200" alt="">
+        <div class="name-date">
+          <span><%= comment.user.firstname %> <%= comment.user.lastname %></span>
+          <span><%= comment.created_at %></span>
+        </div>
+      </div>
+      <p><%= comment.text %></p>
+    </div>
+    <% end %>
+    <% if user_signed_in? %>
+    <div class="form">
+      <div class="details">
+        <img src="http://placehold.it/200x200" alt="">
+        <div class="name-date">
+          <span>Prénom Nom</span>
+          <span>13 juin 2017</span>
+        </div>
+      </div>
+      <%= render "comments/form", :comment => @comment %>
+    </div>
+    <% end %>
+  </div>
+</section>
