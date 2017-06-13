@@ -33,7 +33,7 @@
     <% @issue.comments.each do |comment| %>
     <div class="comment">
       <div class="details">
-        <img src="http://placehold.it/200x200" alt="">
+        <%= image_tag comment.user.avatar.url(:medium) %>
         <div class="name-date">
           <span><%= comment.user.firstname %> <%= comment.user.lastname %></span>
           <span><%= comment.created_at %></span>
@@ -45,9 +45,9 @@
     <% if user_signed_in? %>
     <div class="form">
       <div class="details">
-        <img src="http://placehold.it/200x200" alt="">
+        <%= image_tag current_user.avatar.url(:medium) %>
         <div class="name-date">
-          <span>Prénom Nom</span>
+          <span><%= current_user.firstname %> <%= current_user.lastname %></span>
           <span>13 juin 2017</span>
         </div>
       </div>
