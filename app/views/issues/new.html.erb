@@ -1,5 +1,5 @@
-<h1>New Issue</h1>
-
-<%= render 'form', issue: @issue %>
-
-<%= link_to 'Back', issues_path %>
+<section id="issues" class="create-edit">
+  <%= link_to '', root_path, class: "close" %>
+  <h1>Ajouter une problématique</h1>
+  <%= render 'form', issue: @issue %>
+</section>
