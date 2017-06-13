@@ -9,8 +9,12 @@
   border: none;
   font-family: $main-font;
   cursor: pointer;
+  text-align: center;
   &.btn-login {
     text-transform: uppercase;
+  }
+  &.btn-error {
+    @include bgGradient(100deg, #FF0844, #FFB199);
   }
   &.btn-image {
     display: block;

@@ -15,10 +15,13 @@
     <%= f.text_area :description, class: "input simple", placeholder: "Réponse à la problématique" %>
     <%= f.select :wikis, Wiki.all.collect {|wiki| [wiki.undefined, wiki.id]}, {:selected => @wiki_ids}, :multiple => true, style: "display:block;width:100%;" %>
 
-    <% if current_page?(edit_issue_path) %>
-      <%= f.submit 'Modifier la problématique', class: "btn btn-default" %>
-    <% elsif current_page?(new_issue_path) %>
+    <% if current_page?(new_issue_path) %>
       <%= f.submit 'Ajouter la problématique', class: "btn btn-default" %>
+    <% elsif current_page?(edit_issue_path) %>
+      <div class="btn-group-edit">
+        <%= f.submit 'Modifier la problématique', class: "btn btn-default" %>
+        <%= button_to 'Supprimer la problématique', {:action => 'destroy', :id => issue.id}, class: "btn btn-error", method: :delete %>
+      </div>
     <% end %>
 
 <% end %>
