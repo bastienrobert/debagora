@@ -21,9 +21,61 @@
         border: none;
         background: transparent;
         font-size: 1.05em;
-        font-family: 'Raleway', sans-serif;
+        font-family: $main-font;
         vertical-align: 4.5px;
         min-width: 15em;
+      }
+    }
+  }
+  &.simple {
+    color: $master-green;
+    border: none;
+    border-bottom: 1px solid $grey;
+    font-size: 1.2em;
+    outline: none;
+    &:focus {
+      border-bottom: 1px solid $master-green;
+    }
+  }
+  &.file {
+    input {
+      opacity: 0;
+      position: absolute;
+      z-index: -999;
+    }
+    label {
+      cursor: pointer;
+      font-size: .9em;
+      display: inline-block;
+      span {
+        padding-top: 1em;
+        display: inline-block;
+        &:before {
+          content: "";
+          position: relative;
+          display: inline-block;
+          background-image: url(asset-path('icons/form_pic-icon.svg'));
+          background-position: center 0;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 1.3em;
+          width: 1.3em;
+          vertical-align: -4px;
+          margin-right: .5em;
+        }
+      }
+    }
+    img {
+      border-radius: 100%;
+      padding: 3px;
+      border: 2px solid $master-green;
+      height: 115px;
+      width: 115px;
+      transition: opacity .2s;
+      display: block;
+      object-fit: cover;
+      &:hover {
+        opacity: .7;
       }
     }
   }
