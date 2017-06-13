@@ -111,6 +111,20 @@ section#archives.show {
   }
   .answer {
     margin: 3em 0;
+    &.audio,
+    &.video {
+      width: 96%;
+      margin-left: 4%;
+      iframe {
+        width: 100%;
+      }
+    }
+    &.audio iframe {
+      height: 10em;
+    }
+    &.video iframe {
+      height: 35em;
+    }
   }
   .wikis {
     display: flex;
@@ -121,8 +135,7 @@ section#archives.show {
       color: $grey-contrasted;
       font-size: 1.4em;
       font-weight: 600;
-      padding-bottom: 8px;
-      transition: all .2s;
+      padding-bottom: 7px;
       &:hover {
         border-bottom: 3px solid $master-green;
         padding-bottom: 4px;
