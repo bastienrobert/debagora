@@ -1,3 +1,33 @@
-// Place all the styles related to the Archives controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+section#archives.index {
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  #card {
+    width: 38vw;
+    margin-bottom: 3em;
+    box-shadow: 0 0 30px rgba($grey, .7);
+    .more {
+      text-align: center;
+      margin-top: 2em;
+      .btn {
+        display: inline-block;
+        font-size: 1.05em;
+        box-shadow: none;
+      }
+    }
+  }
+  h3 {
+    font-family: $secondary-font;
+    font-size: 13vw;
+    letter-spacing: .3em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-transform: uppercase;
+    color: $grey;
+    opacity: .2;
+    z-index: -1;
+  }
+}
