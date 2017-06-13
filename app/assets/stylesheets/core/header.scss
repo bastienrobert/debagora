@@ -30,6 +30,13 @@ header {
         &:hover {
           color: $grey-contrasted;
         }
+        .onlive {
+          font-size: .8em;
+          padding-right: .5em;
+          animation: heart 2s infinite;
+          color: #d5093c;
+          vertical-align: 3px;
+        }
       }
     }
   }
