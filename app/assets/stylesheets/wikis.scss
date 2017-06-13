@@ -1,3 +1,89 @@
-// Place all the styles related to the Wikis controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+section#wikis {
+  font-family: $main-font;
+  ul {
+    display: block;
+    h3 {
+      font-size: 1.8em;
+      color: $master-green;
+      font-weight: 600;
+      text-transform: capitalize;
+      &:after {
+        content: "";
+        position: relative;
+        width: 120px;
+        height: 3px;
+        border: none;
+        background-color: $master-green;
+        display: block;
+        margin-top: .2em;
+        margin-bottom: .75em;
+      }
+    }
+    p {
+      margin-left: .8em;
+      font-size: .95em;
+    }
+  }
+  #navigate {
+    display: block;
+    position: absolute;
+    bottom: 6vh;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    #alphabet {
+      li {
+        display: inline-block;
+        list-style: none;
+        margin: 0 .4em;
+        padding: 0 .6em 3px;
+        text-transform: uppercase;
+        opacity: .7;
+        color: $grey;
+        font-weight: 600;
+        transition: all .2s;
+        &:hover,
+        &.active {
+          color: $grey-contrasted;
+          border-bottom: 3px solid $master-green;
+          font-size: 1.4em;
+          opacity: 1;
+          padding-bottom: 0;
+        }
+        a {
+          color: inherit;
+          padding-bottom: 10px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  #big-navigate {
+    position: absolute;
+    z-index: 999;
+    background-color: rgba(230, 230, 230, .7);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    span {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      font-size: 16vw;
+      font-family: 'Open Sans';
+      text-transform: uppercase;
+      letter-spacing: .3em;
+      color: $grey;
+      strong {
+        color: $grey-contrasted;
+      }
+    }
+    &.visible {
+      display: block;
+    }
+  }
+}

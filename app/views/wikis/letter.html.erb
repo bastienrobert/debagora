@@ -1,29 +1,18 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Wikis</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Undefined</th>
-      <th>Content</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+<section id="wikis">
+  <ul class="undefined">
     <% @wikis.each do |wiki| %>
-      <tr>
-        <td><%= wiki.undefined %></td>
-        <td><%= wiki.content %></td>
-        <td><%= link_to 'Show', wiki %></td>
-        <td><%= link_to 'Edit', edit_wiki_path(wiki) %></td>
-        <td><%= link_to 'Destroy', wiki, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <%= link_to wiki do %>
+        <li>
+          <h3><%= wiki.undefined %></h3>
+          <p><%= wiki.content %></p>
+        </li>
+      <% end %>
     <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Wiki', new_wiki_path %>
+  </ul>
+  <div id="navigate">
+    <ul id="alphabet"></ul>
+  </div>
+  <div id="big-navigate">
+    <span id="big-alphabet"></span>
+  </div>
+</section>

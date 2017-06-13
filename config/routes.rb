@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   resources :wikis
 
   # Wikis special routes
-  get '/wikis/letter/:undefined', to: 'wikis#letter'
+  get '/wikis/letter/:undefined', to: 'wikis#letter', as: :wiki_letter
 
   # Issues special routes
   post '/issues/:id/like', to: 'issues#like'
