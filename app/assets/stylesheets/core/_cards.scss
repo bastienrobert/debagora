@@ -4,32 +4,35 @@
   min-height: 10em;
   text-align: left;
   font-family: $main-font;
-  .date {
-    display: inline-block;
-    border: 2px solid $master-green;
-    padding: 2px 5px 5.5px;
-    height: 2.4em;
-    width: 2.4em;
-    line-height: 1.3em;
-    font-weight: 600;
-    text-align: center;
-    margin-right: .8em;
-  }
-  h4 {
-    display: inline-block;
-    vertical-align: 10px;
-    font-size: 1.8em;
-    font-weight: 600;
-    &:after {
-      content: "";
-      display:block;
-      position: relative;
-      background-color: $master-green;
-      border: none;
-      height: 3px;
-      width: 150px;
-      margin-top: 6px;
-      margin-left: 2px;
+  .head {
+    display: flex;
+    .date {
+      display: inline-block;
+      border: 2px solid $master-green;
+      padding: 2px 5px 5.5px;
+      height: 2.4em;
+      width: 2.4em;
+      line-height: 1.3em;
+      font-weight: 600;
+      text-align: center;
+      margin-right: .8em;
+    }
+    h4 {
+      display: inline-block;
+      vertical-align: 10px;
+      font-size: 1.8em;
+      font-weight: 600;
+      &:after {
+        content: "";
+        display:block;
+        position: relative;
+        background-color: $master-green;
+        border: none;
+        height: 3px;
+        width: 150px;
+        margin-top: 6px;
+        margin-left: 2px;
+      }
     }
   }
   p {

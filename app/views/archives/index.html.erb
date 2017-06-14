@@ -2,12 +2,14 @@
   <h3>archives</h3>
   <% @archives.each do |archive| %>
   <div id="card">
-    <div class="date">
-      <%= archive.created_at.strftime("%d") %>
-      <br>
-      <%= archive.created_at.strftime("%B").split(//).first(4).join("").to_s %>
+    <div class="head">
+      <div class="date">
+        <%= archive.created_at.strftime("%d") %>
+        <br>
+        <%= archive.created_at.strftime("%B").split(//).first(4).join("").to_s %>
+      </div>
+      <h4><%= archive.issue.label %></h4>
     </div>
-    <h4><%= archive.issue.label %></h4>
     <p><%= archive.resume.slice(0...210) %>...</p>
     <div class="more">
       <%= link_to 'En savoir plus', archive_path(archive), class: "btn btn-default" %>

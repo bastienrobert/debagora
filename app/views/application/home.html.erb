@@ -27,13 +27,15 @@
     <h3>Evenements en cours</h3>
     <div id="slider">
       <div id="card">
-        <div class="date">
-          <%= @issue.created_at.strftime("%d") %>
-          <br>
-          <%= @issue.created_at.strftime("%B").split(//).first(4).join("").to_s %>
+        <div class="head">
+          <div class="date">
+            <%= @issue.created_at.strftime("%d") %>
+            <br>
+            <%= @issue.created_at.strftime("%B").split(//).first(4).join("").to_s %>
+          </div>
+          <h4><%= @issue.label %></h4>
         </div>
-        <h4><%= @issue.label %></h4>
-        <p><%= @issue.description %></p>
+        <p><%= @issue.description.slice(0...210) %>...</p>
       </div>
     </div>
   </div>
