@@ -48,7 +48,7 @@ class IssuesController < ApplicationController
   def create
     @issue = current_user.issues.new(issue_params)
     params[:issue][:wikis].each do |w|
-      @issue.wikis << Wiki.find(w)
+      @issue.wikis << Wiki.find(w) if w != ""
     end
     respond_to do |format|
       if @issue.save
