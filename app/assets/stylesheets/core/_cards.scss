@@ -4,6 +4,9 @@
   min-height: 10em;
   text-align: left;
   font-family: $main-font;
+  @media screen and (max-width: 1022px) {
+    width: 100%!important;
+  }
   .head {
     display: flex;
     .date {
@@ -22,6 +25,9 @@
       vertical-align: 10px;
       font-size: 1.8em;
       font-weight: 600;
+      @media screen and (max-width: 650px) {
+        font-size: 1.3em;
+      }
       &:after {
         content: "";
         display:block;
