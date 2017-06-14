@@ -1,12 +1,10 @@
 <section id="wikis">
   <ul class="undefined">
     <% @wikis.each do |wiki| %>
-      <%= link_to wiki do %>
         <li>
           <h3><%= wiki.undefined %></h3>
           <p><%= wiki.content %></p>
         </li>
-      <% end %>
     <% end %>
   </ul>
   <div id="navigate">

@@ -1,6 +1,6 @@
 section#wikis {
   font-family: $main-font;
-  ul {
+  .undefined {
     display: block;
     h3 {
       font-size: 1.8em;
@@ -22,6 +22,7 @@ section#wikis {
     p {
       margin-left: .8em;
       font-size: .95em;
+      margin-bottom: 1.5em;
     }
   }
   #navigate {
