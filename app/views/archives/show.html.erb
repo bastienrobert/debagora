@@ -38,7 +38,7 @@
         <img src="http://placehold.it/200x200" alt="">
         <div class="name-date">
           <span><%= comment.user.firstname %> <%= comment.user.lastname %></span>
-          <span><%= comment.created_at %></span>
+          <span><%= comment.created_at.strftime("%d %B %Y") %></span>
         </div>
       </div>
       <p><%= comment.text %></p>
@@ -50,7 +50,7 @@
         <%= image_tag current_user.avatar.url(:medium) %>
         <div class="name-date">
           <span><%= current_user.firstname %> <%= current_user.lastname %></span>
-          <span>13 juin 2017</span>
+          <span><%= Date.today.strftime("%d %B %Y") %></span>
         </div>
       </div>
       <%= render "comments/form", :comment => @comment %>
