@@ -31,11 +31,11 @@ header {
           color: $grey-contrasted;
         }
         .onlive {
-          font-size: .8em;
-          padding-right: .5em;
+          font-size: 2em;
+          padding-right: .15em;
           animation: heart 2s infinite;
           color: #d5093c;
-          vertical-align: 3px;
+          vertical-align: -3.5px;
         }
       }
     }
