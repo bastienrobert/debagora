@@ -44,5 +44,17 @@
       <p><%= comment.text %></p>
     </div>
     <% end %>
+    <% if user_signed_in? %>
+    <div class="form">
+      <div class="details">
+        <%= image_tag current_user.avatar.url(:medium) %>
+        <div class="name-date">
+          <span><%= current_user.firstname %> <%= current_user.lastname %></span>
+          <span>13 juin 2017</span>
+        </div>
+      </div>
+      <%= render "comments/form", :comment => @comment %>
+    </div>
+    <% end %>
   </div>
 </section>

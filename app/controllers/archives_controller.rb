@@ -11,6 +11,8 @@ class ArchivesController < ApplicationController
   # GET /archives/1
   # GET /archives/1.json
   def show
+    @comment = Comment.new
+    @issue = @archive.issue
   end
 
   # GET /archives/new
