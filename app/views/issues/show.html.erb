@@ -1,22 +1,31 @@
 <section id="issues" class="show">
   <%= link_to '', issues_path, class: "close" %>
+
+  <% if user_signed_in? %>
+    <% if @issue.likes?(current_user) %>
+      <%= form_tag(action: "unlike", method: "post") do %>
+        <div class="btn-like liked" id="like-button">
+          <%= submit_tag "Je n'aime plus", id: "like-submit", name: "like-submit" %>
+          <label for="like-submit" class="ico"></label>
+        </div>
+      <% end %>
+    <% else %>
+      <%= form_tag(action: "like", method: "post") do %>
+        <div class="btn-like" id="like-button">
+          <%= submit_tag "J'aime", id: "like-submit", name: "like-submit" %>
+          <label for="like-submit" class="ico"></label>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+
   <h1><%= @issue.label %></h1>
   <div class="informations">
     <ul>
       <li><em>Date : </em><%= @issue.created_at %></li>
       <li><em>Auteur : </em><%= @issue.user.firstname %> <%= @issue.user.lastname %></li>
-
-      <%= @issue.likes?(current_user) if user_signed_in? %>
-      <br>
-      <%= form_tag(action: "like", method: "post") do %>
-        <%= submit_tag("Like") %>
-      <% end %>
-      <%= form_tag(action: "unlike", method: "post") do %>
-        <%= submit_tag("Unlike") %>
-      <% end %>
-
-
-      <li class="icons"><span class="heart"></span><em><%= @issue.likes.count %></em></li>
+      <li class="icons"><span class="comment"></span><em><%= @issue.comments.count %></em></li>
+      <li class="icons"><span class="heart"></span><em id="like-counter"><%= @issue.likes.count %></em></li>
     </ul>
   </div>
   <div class="answer">

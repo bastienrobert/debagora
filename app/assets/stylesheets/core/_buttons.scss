@@ -35,3 +35,32 @@
     letter-spacing: 1px;
   }
 }
+.btn-like {
+  background-color: #FFF;
+  position: relative;
+  float: left;
+  border: 2px solid $master-green;
+  border-radius: 3em;
+  font-weight: 200;
+  .ico {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    padding: .025em 0;
+    margin-right: .6em;
+    background-image: url(asset-path('icons/issues-card_heart.svg'));
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    vertical-align: -3px;
+  }
+  &.liked .ico {
+    background-image: url(asset-path('icons/issues-card_heart-full.svg'));
+  }
+  input {
+    background: none;
+    font-size: 1.05em;
+    border: none;
+    padding-right: 0;
+  }
+}
