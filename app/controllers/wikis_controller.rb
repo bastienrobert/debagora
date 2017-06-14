@@ -16,7 +16,7 @@ class WikisController < ApplicationController
   # GET /wikis/a
   # GET /wikis/a.json
   def letter
-    @wikis = Wiki.where("undefined LIKE UPPER(:prefix)", prefix: "#{params[:undefined]}%")
+    @wikis = Wiki.where("LOWER(undefined) LIKE :prefix", prefix: "#{params[:undefined]}%")
   end
 
   # GET /wikis/new
