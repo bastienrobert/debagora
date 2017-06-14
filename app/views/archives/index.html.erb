@@ -8,7 +8,7 @@
       <%= archive.created_at.strftime("%B").split(//).first(4).join("").to_s %>
     </div>
     <h4><%= archive.issue.label %></h4>
-    <p><%= archive.resume %></p>
+    <p><%= archive.resume.slice(0...210) %>...</p>
     <div class="more">
       <%= link_to 'En savoir plus', archive_path(archive), class: "btn btn-default" %>
     </div>

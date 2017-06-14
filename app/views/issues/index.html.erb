@@ -3,7 +3,7 @@
   <% @issues.each do |issue| %>
       <div id="card">
         <h4><%= issue.label %></h4>
-        <p><%= issue.description %></p>
+        <p><%= issue.description.slice(0...210) %>...</p>
         <div class="more">
           <%= link_to 'En savoir plus', issue_path(issue), class: "btn btn-default" %>
         </div>
