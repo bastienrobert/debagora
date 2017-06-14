@@ -6,22 +6,23 @@ class Ability
 
     # Alias
     alias_action :create, :read, :update, :destroy, to: :crud
+    alias_action :create, :update, :destroy, to: :cud
 
     # Everybody
     can :read, Issue
-    can [:read, :letter], Wiki
+    can [:index, :letter], Wiki
     can :read, Archive
-    can :read, Comment
+    can :index, Comment
 
     # If user logged
     if user && user.id
       # If user is just logged in
-      can [:like, :unlike, :create], Issue
-      can :create, Comment
+      can [:like, :unlike, :cud], Issue
+      can :cud, Comment
 
       # If user logged is the owner
       can :crud, Issue, {user_id: user.id}
-      can :crud, Comment, {user_id: user.id}
+      can :cud, Comment, {user_id: user.id}
     end
 
   end
