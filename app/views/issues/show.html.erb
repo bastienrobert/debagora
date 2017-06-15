@@ -34,7 +34,7 @@
   </div>
   <div class="wikis">
     <% @issue.wikis.each do |wiki| %>
-      <%= link_to wiki.undefined, wiki_letter_path(wiki.undefined.first) %>
+      <%= link_to wiki.undefined, wiki_letter_path(wiki.undefined.downcase.first) %>
     <% end %>
   </div>
   <h3>Commentaires</h3>
