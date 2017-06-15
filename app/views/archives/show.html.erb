@@ -15,7 +15,7 @@
   </div>
   <div class="wikis">
     <% @archive.issue.wikis.each do |wiki| %>
-      <a href="#"><%= wiki.undefined %></a>
+      <%= link_to wiki.undefined, wiki_letter_path(wiki.undefined.first) %>
     <% end %>
   </div>
   <div class="answer video">
