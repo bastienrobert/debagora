@@ -28,6 +28,10 @@ class ApplicationController < ActionController::Base
     resp = Net::HTTP.get_response(URI.parse(request))
     data = resp.body
     @json = JSON.parse(data)
+    if @json["pageInfo"]["totalResults"] >= 1
+      description_request = "https://www.googleapis.com/youtube/v3/videos?id=#{@json['items'][0]['id']['videoId']}&key=AIzaSyC2KdtINnW47ait53QbE82kpGqm8_zocz8&part=snippet&fields=items%28snippet%28title,description,categoryId%29%29"
+      @description = JSON.parse(Net::HTTP.get_response(URI.parse(description_request)).body)
+    end
   end
   def on_live?
     request = "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCDZnUzKa_4cwALdD1BLTOkg&type=video&eventType=live&key=AIzaSyC2KdtINnW47ait53QbE82kpGqm8_zocz8"
