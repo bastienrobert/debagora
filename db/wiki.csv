@@ -1,0 +1,186 @@
+"undefined"|"content"
+"3D"|"La 3D caractérise la vision d\'un espace en largeur, hauteur et profondeur (par exemple, le monde qui nous entoure).
+Depuis quelques années, la 3D s\'applique à plusieurs domaines tels que le cinéma, l\'imprimerie ou le jeu vidéo.
+Récemment, les imprimantes 3D ont fait leur apparition et ne cessent de s\'améliorer, si bien qu\'avec de grands modèles, il est possible d\'imprimer des habitations."
+"Alimentation"|"Fait de fournir à quelqu\'un de la nourriture et ainsi combler l\'un des besoins physiologiques commun aux êtres vivants. Mais l’alimentation peut aussi être électrique, d’un chargeur vers un appareil électronique.
+L’abus ou le manque d’alimentation (boulimie ou famine) peut causer la mort d’un être vivant. Ce n’est pas le cas pour une machine, l’abus d’alimentation ne provoque en général aucune réaction (peut-être une surchauffe) et le manque d’alimentation cause l’extinction du système et est totalement remédiable.
+"
+"API"|"Interface permettant d\'interagir avec une application, généralement accompagnée d\'une documentation afin d\'expliquer comment celle-ci fonctionne. On peut l’intégrer à un site web."
+"Assistance"|"Fait d\'assister quelqu\'un, de l\'aider dans une difficulté, de préserver cette personne d\'un danger.
+C\'est aussi un système de dépannage qui met en relation un particulier qui rencontre un problème et un professionnel en mesure de le régler."
+"Base de données"|"Ensemble de données structurées et organisées, stocké sur un support informatique (serveur) sous forme de tableaux appelés tables, les données sensibles y sont cryptées, de façon à ce que même l’administrateur n’y ait pas accès."
+"Big Data"|"Rassemblement, traitement et diffusion de données de masse.
+Il s’agit de découvrir de nouveaux ordres de grandeur concernant la capture, la recherche, le partage, le stockage, l’analyse et la présentation des données.
+Cependant, aucune définition précise ou universelle ne peut être donnée au Big Data, étant un objet complexe car sa définition varie selon les communautés.
+"
+"Biopiraterie"|"Confiscation du commun biologique via l\'appropriation de gènes, de semences ou de connaissances en agronomie.
+Cet acte est illégal et consiste en la privatisation via le dépôt de brevets liés à des organismes. 
+Il en résulte un appauvrissement de la biodiversité et un monopole de la firme propriétaire des ressources, ce qui rend dépendantes les populations locales. "
+"Botnet"|"Flotte d\'ordinateurs dont le contrôle a été volé par un pirate ou par un groupe de pirates, pour effectuer des actions de masse de piraterie.
+Ces machines zombies sont utilisés pour des usages malveillants, comme l\'envoi de spam et virus informatiques, ou des attaques informatiques par déni de service communément appelées DDoS."
+"Centralisation"|"Fait de réunir dans un même endroit toutes sortes de biens, de services et/ou de personnes. Cela peut aussi être le fait de réunir plusieurs infrastructures matérielles et/ou logicielles dans un même réseau /service.
+La centralisation des connaissances peut être très utile, sur des Wikis par exemple, pour regrouper des savoirs sur une seule et même interface, mais la centralisation des données personnelles est dangereuse puisqu’elles sont accessibles à un seul et même endroit et donc toutes vulnérables (il suffit d’un seul problème pour toutes les compromettre). 
+Debagora, dans son concept, est une forme de centralisation de la connaissance.
+"
+"Challenge"|"Un challenge est un défi, une épreuve à surmonter.
+A l\'ère du numérique, ce terme est employé pour désigner des défis partagés su les réseaux sociaux. A l\'origine, ces défis avaient pour but d\'être les vecteurs d\'un message, afin de faciliter sa propagation à l\'image du ALS Ice Bucket Challenge, qui transmettait un message de lutte contre une maladie.
+Quelques années plus tard, les challenges ne sont porteurs d\'une cause, ils s\'avèrent même parfois dangereux pour la santé ou la vie de ceux qui les relèvent (Ice and Salt Challenge ou encore Blue Whale Challenge)."
+"Chatbot"|"Robot conversationnel, permettant de se sentir moins seul en répondant à des questions type. C\'est le téléphone rose du geek."
+"Cloud"|"Stockage en ligne, gratuit ou payant.
+Son fonctionnement s’appuie sur 4 grands principes : 
+- la mutualisation des données (par plusieurs consommateurs accessibles à plusieurs consommateurs)
+- l’ouverture (mise à disposition sur Internet et compatibilité avec les devices)
+- les ressources en libre-service 
+- le paiement à l’usage (peut être facturé en fonction de la quantité de stockage utilisée)
+"
+"CMS"|"Outil permettant de créer un site internet sans savoir développer proprement, avec facilité et surtout très rapidement grâce à une interface d\'administration. On peut citer Wordpress, Wix, Joomla et Prestashop."
+"Commerçant"|"Un commerçant est quelqu\'un qui vend des marchandises. Généralement il fait de la revente, mais ce n\'est pas toujours le cas. Il vend parfois directement une production.
+Avec le numérique, l\'activité de beaucoup de commerçants se passe via des boutiques en ligne et des marketplaces (Amazon, eBay, Etsy…) : c’est le e-commerce. Le commerce IRL (cf.idéfinition In Real Life) n’a pas disparu pour autant, ils sont tous les deux complémentaires. En effet, le commerce ne se limite plus à des marchandises nécessitant un achat physique. D\'ailleurs le plus gros commerce en ligne est la vente de données."
+"Communication"|"La communication est un ensemble d\'intéractions occasionnant un transfert d\'informations entre deux parties, qu\'elles soient biologiques ou technologiques.
+Au fil des années, les moyens de communication se sont diversifiées, passant de la parole et des gestes à la messagerie instantanée et la vidéo-conférence."
+"Connaissance"|"Ensemble d’idées, de faits, de théories, de résultats qui constituent le patrimoine de l’intelligence et le fondement de la culture. De nos jours, la connaissance est accessible non seulement à l’école, mais aussi sur Internet (Wikipédia, Youtube...), l’auto-apprentissage est devenu courant."
+"Consommation"|"Fait de combler l\'avoir, parfois pour être, souvent pour avoir."
+"Crowdfunding"|"Moyen de lever des fonds pour un projet en demandant à des participants (en général des gens ou entreprises suivant l’activité de l’entité à l’origine du projet, ou ayant envie de le soutenir) d\'atteindre un certain montant en demandant de petits dons."
+"Crowdsourcing"|"Terme désignant un mode de production basé sur la mise en commun des capacités, du savoir-faire et de l\'intelligence de chacun.
+Les projets de crowdsourcing sont souvent plus aboutis, plus complets et plus nuancés que ceux réalisés par une seule personne.
+On peut citer Wikipédia comme un bel exemple de crowdsourcing."
+"CSS"|"Création d\'apparence d\'un site, mise en forme d\'une esthétique, maquillage et mise en beauté d\'une plateforme sur le web. Le CSS est le maquillage de l\'Internet. "
+"Danger"|"Fait de mettre en péril sa propre vie ou celle d’un tiers, physiquement comme psychologiquement. Avec la technologie, le danger est aujourd\'hui omniprésent, il faut sans cesse protéger sa vie privée et ses informations personnelles (virus, revenge porn, harcèlement en ligne…).
+Pour certaines personnes, la prise de risques est quotidienne, ils se mettent en danger en connaissance de cause (pirates, cascadeurs, voleurs...).
+La loi est adaptée aux dangers de la vie réelle (cf. indéfinition In Real Life), mais elle gère difficilement les cas concernant les crimes et délits commis sur Internet, car il existe plus de moyens de se cacher et de contourner les lois de façon quasi-invisible (pseudos, VPN, Proxy,...).
+"
+"Déchet"|"Un déchet est un résidu ou la trace d\'une consommation, impropre à l\'usage (sauf gaspillage). Il peut être biodégradable ou non.
+La pollution est occasionnée par un trop plein de déchets non biodégradables.
+Il existe des déchets numériques : ce sont des fichiers que l\'on n\'utilisera plus et que l\'on peut facilement mettre à la corbeille, supprimer."
+"Dépendance"|"État d’asservissement à une substance, un objet, envers autrui et/ou à une action qui peut être néfaste.
+Il existe des formes de dépendance à la technologie, par exemple au portable : l’homme moderne regarde son téléphone très souvent, au risque d’en oublier sa vie réelle. Mais notre vie réelle ne se résume t-elle pas peu à peu à notre vie virtuelle ?
+"
+"Device"|"Support sur lequel un individu lambda peut consulter des applications."
+"DIY"|"Do It Yourself : se dit de tout ce qui est faisable par soi-même.
+Ce terme est très utilisé dans le cadre de tutoriels en ligne pour apprendre à réaliser par soi-même, à bas prix des objets que l\'on pourrait trouver dans le commerce. Cela permet non-seulement d\'économiser, mais aussi de posséder quelque chose d\'unique, de personnalisé."
+"Domotique"|"Fait de rendre sa maison intelligente au moyen d’outils connectés intuitifs (faciles d’utilisation et utiles) et gérables à distance.
+"
+"Drone"|"Un drone est un appareil piloté à distance et inhabité, dont l\'usage initial est militaire.
+Cette technologie s\'est démocratisée au cours du XXIe siècle et beaucoup d\'appareils équipés de caméras sont disponibles à la vente.
+Suite à de nombreux problèmes juridiques concernant l\'usage de drones, leur utilisation a été reglementée."
+"e-réputation"|"Réputation d\'une personne bâtie sur ses actions, ses posts sur le net, et à l\'image qu\'elle renvoie d\'elle sur la toile. Sur les réseaux sociaux, on doit protéger sa réputation. Les recruteurs vérifient les propos des candidats sur Internet. La présence sur les réseaux sociaux peut présenter un danger, des tiers peuvent altérer notre e-réputation en interagissant avec nos publications."
+"Ebook"|"Livre en version numérique, disponible en ligne. Beaucoup de classiques sont gratuits et les livres dématérialisés évitent l’encombrement dû à la présence d’une bibliothèque en lui substituant une bibliothèque virtuelle disponible sur plusieurs devices."
+"Économie"|"L\'économie est la gestion de la production, de la distribution et de la consommation des richesses au sein d\'une communauté. C\'est l\'un des facteurs clés des civilisations modernes et c\'est un indicateur de la sécurité financière d\'un pays."
+"Écriture"|"L\'écriture est un moyen de communication qui se base sur l\'inscription de signes possédant un sens sur un support.
+Elle peut être manuscrite ou non (machine à écrire, imprimerie) et a permis de mettre en place les premiers moyens de communication à distance (missives, pigeons voyageurs)."
+"Éditeur de code"|"Éditeur de texte amélioré, optimisé pour l\'écriture de code (couleurs, auto-indentation). Les plus utilisés sont Atom et Sublime Text, notamment pour leur facilité d’utilisation mais aussi pour leur côté Open Source (large communauté)."
+"Efficience"|"Caractère d\'une personne ou d’un objet qui produit le maximum de résultats avec le minimum d\'efforts et de moyens. Avec des outils numériques, on peut augmenter notre efficience. En effet, ils permettent de minimiser les tâches répétitives."
+"Évolution"|"Fait de changer par rapport à un environnement, des besoins ou des désirs. 
+Une évolution peut affecter un être vivant, un objet, la pensée, le comportement, et, dans le cas du numérique, des matériaux et des technologies, comme par exemple, l’évolution de la physionomie de l’ordinateur, qui au fil des ans, a totalement changé de forme.
+L’évolution, sur le plan intellectuel, est permise par le numérique. En effet ce dernier permet à l’Homme de se cultiver, de découvrir des choses aussi bien positives que négatives.
+"
+"Exhibition"|"Fait de se montrer ou se dévoiler en public, avec les réseaux sociaux, nous nous exhibons constamment (mais attention aux soucis d’égo)."
+"Exhibitionnisme"|"L\'exhibitionnisme est une pratique de provocation illégale, consistant à dévoiler des parties du corps habituellement couvertes en public, de manière à choquer les personnes présentes.
+Sur Internet, l\'exhibitionnisme peut avoir cette même connotation intime (nudes,...), mais ce terme caractérise aussi le fait de toujours se mettre en avant sur Internet, et de partager des informations normalement privées."
+"Feedback"|"Fait de faire le point, d\'émettre son ressenti, au sein d\'une équipe à propos d\'un travail effectué. Il peut être de plusieurs formes (wrap, burger) mais son but reste le même, émettre son opinion dans le but de faire avancer un projet."
+"FOMO"|"FOMO signifie «Fear Of Missing Out», littéralement «peur de manquer quelque chose» en français, cette peur se caractérise par une anxiété constante causée par le besoin irrationnel et insatiable d\'être à la page.  Ce besoin s\'est démultipliée avec l\'apparition du smatphone."
+"GAFAM"|"Google|Apple|Facebook|Amazon|Microsoft : Géants du web qui mettent en péril Internet en le rendant centralisé et ainsi surveillable, dangereux pour la vie privée, et non pérenne."
+"Génération Y"|"Personnes ayant grandi avec Internet (nées entre 1980 et 2000), la génération Y est une génération ayant un lien inné avec la technologie."
+"Hacker"|"Personne ayant pour but de détourner de son objectif initial un outil, une ou des données, et ce en opposition avec la loi. 
+Le Hacker peut néanmoins être un gardien, embauché par un particulier, par une entreprise, ou par l\'état, qui à l\'inverse est chargé de protéger une ou des données sensibles pour éviter tout vol, à l’image d’un corsaire au XVIe siècle.
+"
+"Harcèlement"|"Acte de s\'immiscer dans la vie de quelqu\'un contre son gré. Il se manifeste par un enchaînement d\'agissements hostiles à l\'encontre d\'un individu pour l\'affaiblir psychologiquement. 
+Il existe plusieurs formes de harcèlement, notamment le cyber harcèlement. Apparu avec l\'essor du numérique, il se base sur l\'utilisation des messageries, forums, chats en ligne, et tous les canaux de communication connus pour propager des rumeurs qui comprommettent l\'e-reputation (cf. indéf e-réputation) et même la réputation IRL (cf. indéf In Real Life) de l\'individu. "
+"Héritage"|"Fait de recevoir le patrimoine intellectuel et/ou matériel d’un prédécesseur. 
+Dans le numérique, on dit d’une fonction qu’elle est “héritée” quand elle se base sur une ancienne fonction qui est complétée ou modifiée. Cela permet de respecter le DRY (Don’t Repeat Yourself), en reprenant les anciennes lignes de code toujours valides, et en les complétant.
+"
+"IDE"|"Editeur de texte intégrant des outils de débuggage et de génération automatique de documentation afin d\'avoir un code le plus propre possible, sans prendre le temps de tout générer."
+"Intelligence Artificielle"|"Intelligence visant à imiter celle de l’humain sur toute interface logicielle (ex: chatbot). À l’heure actuelle, les intelligences artificielles existantes ne sont pas très développées (elles ne passent pas le test de Turing consistant à vérifier si une entité est consciente d’elle-même et est capable de réfléchir par elle-même ) et une question subsiste, qui fait que certains sont réticents à propos des progrès vis-à-vis des intelligences artificielles, à savoir  : “Est-ce que la machine dépassera un jour l’Homme ?”."
+"Interculturalité"|"L\'interculturalité ou interculturalisme se manifeste l\'échange culturel entre plusieurs communautés via la communication orale ou le numérique.
+Avec l\'avènement des émissions culturelles et des chats en ligne (correspondances), l\'Homme moderne pratique l\'interculturalité au quotidien."
+"IRL"|"In Real Life : Dans un monde où les rapports en ligne sont omniprésents, il est parfois nécessaire de préciser si les rencontres se font dans une réalité physique ou via une interface virtuelle."
+"Jeux d’argent"|"Jeux de réflexion, de hasard ou de paris, au cours desquels on peut gagner de l’argent, ou en perdre... Ces jeux sont jouables sur des plateformes en ligne (paris en ligne, loteries en ligne…)."
+"Journaliste"|"Personne en charge de récolter des informations pour de l\'argent afin de les publier sur tous supports voués au partage de données dans le but d’informer un public le plus large possible."
+"Khan Academy"|"La Khan Academy est une association créée par Salman Khan en 2006. Son but est d’abolir les frontières numériques en rendant disponibles 2 200 cours dans tous les domaines scientifiques (mathématiques, informatique, finance, physique-chimie, biologie, astronomie,… ).
+Ces cours sont accessibles à tout le monde, du lycéen au professionnel en passant par l’universitaire. "
+"Label"|"Distinction d\'un produit permettant entre autre sa traçabilité. Cette distinction est donnée par une institution garante de celle-ci. Elle est généralement visible par le grand public et certifie sa provenance, sa qualité..."
+"Loi"|"Une loi est une règle relevant d\'une publication ou d\'une prescription. Les citoyens doivent s\'y conformer au risque d\'être sanctionnés. Une personne ne respectant pas les lois est dite «criminelle» ou hors la loi."
+"Magasins"|"Stockage de marchandises transformé en showrooms où l\'on déambule parmi les rayons de stockage pour choisir nos produits. Depuis peu, les boutiques en ligne sont très sollicitées, on retrouve même des interfaces de boutique en ligne dans le cas des drives et livraisons à domicile."
+"Maintenance"|"La maintenance est l\'action de s\'assurer du bon fonctionnement de quelque chose en vue de préserver sa longévité.
+Avec l\'apparition de l\'obsolescence programmée, il y a une recrudescence de la maintenance, les gens préfèrent réparer plutôt qu\'acheter. "
+"MAO"|"La Musique Assistée par Ordinateur (MAO), désigne l\'ensemble des utilisations de l\'informatique comme outil de création musicale de la composition d\'un morceau à la diffusion de celui-ci.
+Le grand public s\'est familiarisé avec ce concept à la fin des années 70 avec l\'arrivée du synthétiseur."
+"Marketplace"|"Espace dédié à des boutiques virtuelles tierces sur un site Web de vente en ligne. "
+"Médecine"|"Désigne les connaissances scientifiques et tous les moyens mis en œuvre pour guérir, pévenir, ou soulager des malades ou des infirmes.
+Les médecins sont, depuis le début des années 70, assités par des moniteurs de plus en plus puissants (electrocardiogramme,...) et réalisent la pose d\'appareils destinés à améliorer le mode de vie des malades (pacemaker, implants auditifs, coeurs artificiels,...)."
+"Médias"|"Ensemble des plateformes de partage d\'information généralement alimentées par des journalistes."
+"Mémoire"|"La mémoire, ou réminiscence, est une fonction qui permet de conserver et restituer des données, des souvenirs, des connaissances et des expériences.
+Elle se décline sous plusieurs formes, la mémoire sensorielle, la mémoire génétique,... 
+Mais il existe aussi la mémoire numérique : c\'est un dispositif permettant de conserver des informations binaires, on la mesure par la quantité de stockage en bits."
+"Métier"|"Activité pécuniaire caractérisée par une spécificité exigeant un apprentissage et/ou de l\'expérience. Les métiers du numérique sont en pleine expansion."
+"Monitoring"|"Fait de surveiller l\'état physique d\'un être vivant.
+A l\'origine, le monitoring était pratiqué par le corps médical avec du matériel spécialisé.
+Maintenant, beaucoup de smartphones et objets connectés permettent un monitoring quotidien."
+"MOOC"|"Cours en ligne, accessible à tous et permettant de s\'auto-former, d\'accumuler des compétences seul. Ce support permet de supprimer l’intermédiaire du professeur, pour mettre en place d’un nouveau système d’apprentissage sans frontière entre le savoir et celui qui désire apprendre. Ce type d’apprentissage même théorie et pratique, et a pour avantage de mettre à disposition de nombreuses aides et informations, de par la présences de support propre au site, où grâce à des forums."
+"Mort"|"La mort est un état irreversible survenant à la fin de la vie d\'un organisme biologique.
+La mort numérique signifie l\'effacement des données relatives à une personne sur Internet.
+La loi prévoit maintenant la mise en place de testament du numérique à propos de tout bien personnel numérique (données personnelles,...)."
+"Multitasking"|"Terme initialement appliqué au domaine de l’informatique, il s’est décliné au fil du temps pour s’appliquer à l’humain. Il désigne le fait de pouvoir faire un maximum de choses en même temps : c\'est la lubie de l\'Homme moderne. En effet, la productivité est devenue un aspect essentiel pour l’Homme, et il cherche par tous les moyens à l’accroître. Mais le fait d’exercer différentes tâches en même temps est un sujet qui prête à débat, car si certains avancent l’argument comme quoi ce n’est que l’évolution logique de l’Homme, d’autres prônent la vigilance et déclare que l’Homme ne peut effectuer avec qualité plusieurs tâches en même temps."
+"Naissance"|"Venue au monde sans base de connaissances antérieure. Commencer à exister.
+On peut aussi parler de naissance digitale, un individu fait ses premiers pas sur le web sans aucun antécédent (pas d’informations personnelles antérieures en ligne), il se développe, se crée une e-réputation, au fil de ses connexions, achats en ligne...
+"
+"Obsolescence programmée"|"L’obsolescence programmée est un ensemble de techniques datant de la révolution industrielle, utilisées afin de réduire la durée de vie d\'un produit pour en augmenter la fréquence de remplacement et ainsi garantir à l\'entreprise une activité continue et don pérenne.
+De nos jours, l\'obsolescence programmée est très utilisée par les marques, mais décriée par les utilisateurs."
+"Open Source"|"L\'open source est un savoir collaboratif, sans limites, sans frontières, sans autorité restrictive. Accessible par n\'importe qui pour faire évoluer ce savoir où l\'utiliser à des fins personnelles ou professionnelles. Le code peut appartenir à une personne (ce qui engage la présence d’un copyright lors d’une réutilisation), ou à une communauté."
+"Partage"|"Le partage permet un échange de connaissances, de biens, d’argent,... entre divers individus.
+Les moyens de partage se sont multipliés grâce à la technologie, ils sont de plus en plus nombreux et performants (réseaux sociaux, Bluetooth, AirDrop, wiki, site de vente, crowdfunding…).
+"
+"Présence"|"Être physiquement, matériellement dans un lieu donné, à une date donnée.
+À l’ère du numérique, la présence est aussi l’image d’un individu construite à partir de données sur sa personne, sur Internet.
+"
+"Privatisation"|"La privatisation désigne le fait de transferer à une entreprise ou un lobby tout ou partie du capital d\'une entité privée.
+Avec les médias modernes, la privatisation inclut aussi l\'image de cette entité privée."
+"Putaclic"|"Putaclic, est un néologisme péjoratif désignant un contenu Web destiné à générer un maximum de passages d\'internautes en s\'appuyant sur un titre racoleur ou mensonger qui fait sensation.
+Depuis le début des années 2010, les articles et vidéos au titre putaclic se multiplient, ce qui agace beaucoup d\'utlisateurs car le contenu de qualité n\'est quasiment jamais au rendez-vous."
+"QR Code"|"Un QR Code est un type de code-barres. C’est une image composée d’un ensemble de petits carrés noirs sur fond blanc, qui forment une combinaison unique définissant l’information contenue par le code.
+Ce type de code est très répandu car scannable par les smartphones. Il permet d’accéder à n’importe quel type de données (sites web, vidéos, interfaces mises à disposition par des entreprises,...) ou encore de se connecter à une borne WIFI.
+"
+"Réalité virtuelle (VR)"|"Quand on parle de réalité virtuelle, on pense directement au domaine du loisirs, du jeu vidéo (casque de VR). Mais la réalité virtuelle est aussi une réalité qui se passe dans le numérique, sur twitter, sur facebook. La vie est une réalité, et la vie que l\'on mène sur le numérique est une réalité virtuelle. En effet, on peut se créer une existence fictive sur internet mais qui paraît pourtant réelle aux yeux des autres. Chacun peut donc être qui il veut sur Internet, il vit ainsi une autre vie dans une autre réalité, c’est une réalité virtuelle."
+"Recherche"|"La recherche désigne toute collecte de données destinées à améliorer une base de connaissances.
+Elle est à l\'origine de nombreuses découvertes.
+Elle est limitée par l\'éthique (clonage, intelligence artificielle)."
+"Relations"|"Une relation est le lien existant entre deux entités. Elle peut être conflictuelle ou non.
+Le numérique a grandement facilité la mise en relation entre les individus (téléphone, appareils mobiles, Internet, Réseaux sociaux, messagerie instantanée,...)"
+"Religion"|"Une religion est un ensemble de croyances et de pratiques : ce qui a trait à la religion est sacré car elle s\'organise le plus souvent autour de l\'adoration d\'un ou plusieurs dieux.
+Il existe une multitude de religions dont les préceptes sont le plus souvent dictés par un livre définissant les usages de mise chez le croyant et lex exploits des élus du dit dieu.
+Les religions créent des conflits, notamment au XIIe siècle avec les croisades et au XVIIe siècle avec les guerres de religion."
+"Responsablités"|"Une responsabilité est une obligation qui imcombe une ou plusieurs personnes, qui se doivent de gérer et de se porter garant de l\'intégrité de quelque chose.
+La notion de responsabilité est purement humaine."
+"Ressources"|"Une ressource peut désigner un bien matériel ou encore intellectuel, dont dispose un individu, un entité.
+Elle peut être documentaire, alimentaire ou financiaire."
+"Revenge Porn"|"Vengeance envers une personne s’effectuant par la publication de contenu à caractère sexuel mettant en scène la personne visée et ce sans son consentement. Ce phénomène est apparu avec la démocratisation d’Internet et ne cesse de prendre de l’ampleur. Il permet à l’auteur de cette vengeance d’humilier quelqu’un en l’affichant ainsi à très grande échelle (internet n’ayant pas de frontières). "
+"Robot"|"Un robot est une machine inventée par l\'homme dans le but d\'accomplir une ou plusieurs tâches que l\'homme lui a attribuées pour le remplacer.
+C\'est un appareil automatique capable de manipuler des objets ou d\'exécuter des opérations selon un programme fixe, modifiable ou adaptable.
+Il peut posséder une intelligence : c\'est l\'intelligence artificielle. Mais c’est le développement de cette même intelligence qui provoque la peur chez certains Hommes, craignant qu’à force de se développer, les robots considèrent l’humain comme dispensable, et que nous perdions le contrôle sur ce que l’Homme a créé.
+"
+"Robotisation"|"Terme qui désigne à la base le fait d’attribuer à une machine/robot une tâche au préalable effectuée par un humain. Mais aujourd’hui, ce terme ne s’applique pas qu’à des tâches professionnelles. En effet, de nombreux robots sont développés et mis au point partout dans le monde, certains même à l’effigie humaine. On peut donc se demander si le terme robotisation ne signifiera pas bientôt le fait de remplacer les Hommes par les robots dans la vie de tous les jours, sans pouvoir les différencier (c’est d’ailleurs un sujet qui a de nombreuses fois été traité dans la pop-culture cf: blade runner, real human,... )."
+"Satellite"|"Un satellite est un obet en orbite autour d\'une planète.
+L\'être humain a envoyé plusieurs centaines de satellites dans l\'espace afin de récolter des données météorologiques, permettre des connexions nationales et internationales et accéder à des contenus multimédias dans toutes les zones désservies.
+A l\'heure actuelle, le nombre important de satellites inactifs mais pourtant toujours en orbite provoque une pollution de la thermosphère qui se caractérise par un nuage d\'épaves."
+"Se réinventer"|"Renaître de ce qui existe déjà mais en prenant compte des nouveaux besoins, désirs pour innover et prendre de la distance tout en gardant à l’esprit ce qui a déjà été fait."
+"Selfie"|"Le selfie est un autoportrait réalisé le plus souvent avec un appareil mobile. Il est pratiqué très fréquemment, notamment pour immortaliser un instant et le partager sur les réseaux sociaux.
+Ce phénomène a été amplifié avec l\'avènement des caméras frontales et le développement d\'applications de photos telles que Snapchat ou Instagram. Très prisé par la génération Y, il est pourtant souvent qualifié d\'acte narcissique."
+"SEO"|"Ensemble des techniques visant à améliorer la visibilité d\'un site web sur Internet par différents moyens tels que l’ajout de mots-clés pour améliorer son référencement naturel."
+"Sport"|"Le sport est une activité visant à entretenir la condition physique d\'un individu.
+Cette définition est remise en question avec l\'apparition des compétitions de jeux vidéos, créant ainsi le tout nouveau concept d\'e-sports."
+"Stalking"|"Le stalking, littéralement, «traque furtive», est une forme de harcèlement (cf. indéf harcèlement), qui implique une surveillance constante de la part du harceleur vis-à-vis d\'une tierce personne.
+Il induit le plus souvent des attaques, sexuelles ou non, visant à effrayer, se venger de la personne en question, ou satisfaire des pulsions perverses."
+"Transhumanisme"|"Intégration de la technologie dans le corps humain afin de l’améliorer, le rendre plus efficace, plus fort, plus rapide.
+Le transhumanisme est un mouvement culturel et intellectuel international prônant l\'usage des sciences et des techniques afin d\'améliorer les caractéristiques physiques et mentales des êtres humains. Ainsi, ceux qui soutiennent ce mouvement prônent un idéal où l’Homme s’élèverait au-dessus des lois biologique, pour ainsi ne plus craindre les maladies, les accidents, mais aussi la mort… Mais une part de la population va à l’encontre de cette pensée, jugeant que ce genre “d’amélioration” sur l’être humain lui ferait justement perdre ce qui fait de lui un Homme, et qu’il n’est pas bon d’encourager les améliorations technologiques si elles visent à effacer toute humanité
+"
+"Transport"|"Action ou moyen qui vise à permettre le déplacement d\'une entité d\'un point à un autre. Au fil des siècles, le nombre de moyens de transport a considérablement augmenté de par la découverte de nouvelles technologies. "
+"UX"|"C’est le ressenti émotionnel de l’utilisateur, le fruit de la façon avec laquelle il utilise une production multimédia et interagit avec. Un certain nombre de personnes réagissent de la même façon face à une interface, l\'UX se doit d\'être agréable, quel que soit l\'utilisateur, le but étant au final de créer un sentiment d’attachement, pour que l\'utilisateur veuille revenir."
+"Virus"|"Le virus est un agent infectieux nécessitant un hôte. Initialement associé au domaine du biologique, ce terme s’utilise aujourd’hui aussi dans le milieu numérique. En effet, le virus informatique désigne un automate, à la base non malveillant, qui est conçu pour pouvoir se propager dans différents ordinateurs et/ou logiciels (appelés “hôtes”, ce qui renvoie à la définition initiale). Malheureusement, ils sont souvent associés à des bout de code malveillant, et leur propagation entraîne généralement une perturbation plus ou moins grave des appareils affectés."
+"Wiki"|"Un wiki est une plateforme permettant à des individus de partager leur savoir en créant des articles pour un thème choisi, liés entre eux par des mots clés. Ces articles sont ensuite soumis à une modération avant d\'être publiés sur la plateforme.
+Cette idée d\'interface collaborative a été pensée par Ward Cunningham en 1995; la plus connue d\'entre elles est Wikipedia.
+A leurs débuts, les wikis n\'étaient pas considérés comme des sources fiables car les informations partagées étaient subjectives ou erronnées. La modération a depuis été renforcée, et il faut désormais y ajouter des références fiables."
+"XHTML"|"C’est un langage qui sert à l’écriture du World Wide Web. On le désigne comme le successeur du langage HTML, car plus récent et plus simple. La syntaxe du XHTML est plus stricte que celle de son prédécesseur, afin d’éviter des erreurs dans le code, et d’homogénéiser les différentes pages de code trouvable sur Internet."
+"Youtube"|"Youtube est une plateforme d’hébergement de vidéos très simple d’utilisation et donc accessible à tous.
+Un nouveau modèle économique s’est créé avec l’arrivée des appareils mobiles qui ont augmenté la fréquentation du site et ainsi l’apparition de nouveaux types de métiers (vulgarisateur culturel sur le web, youtuber, network manager,...). En effet, les vidéastes peuvent être rémunérés par la plateforme en fonction du taux de vues engendrées.
+"
+"Zapping"|"Le zapping désigne une manière de regarder la télévision en changeant régulièrement de chaîne à une fréquence élevée, pour trouver un programme susceptible d’intéresser le spectateur. Les “zappeurs” le font souvent lors des coupures de publicité."

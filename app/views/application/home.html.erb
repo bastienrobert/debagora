@@ -33,7 +33,7 @@
             <br>
             <%= @issue.created_at.strftime("%B").split(//).first(4).join("").to_s %>
           </div>
-          <h4><%= @issue.label %></h4>
+          <h4><%= link_to @issue.label, issue_path(@issue)  %></h4>
         </div>
         <p><%= @issue.description.slice(0...210) %>...</p>
       </div>
