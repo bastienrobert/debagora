@@ -83,6 +83,11 @@ section#home {
       width: 50%;
       margin: 3em auto;
       margin-bottom: 3.5em;
+      h4 {
+        a {
+          color: $grey-contrasted;
+        }
+      }
     }
     &:before,
     &:after {
