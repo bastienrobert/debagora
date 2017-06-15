@@ -21,21 +21,27 @@ section#wikis {
     }
     p {
       margin-left: .8em;
-      font-size: .95em;
+      font-size: 1em;
       margin-bottom: 1.5em;
+      line-height: 1.25em;
+    }
+    li:last-child {
+      margin-bottom: 8em;
     }
   }
   #navigate {
     display: block;
     position: fixed;
-    padding-bottom: 6vh;
-    padding-top: 1em;
+    padding-bottom: 4vh;
+    padding-top: 1.5em;
     bottom: 0;
     left: 0;
     text-align: center;
     width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,.3) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255, 255, 255, .75) 75%, rgba(255,255,255,0) 100%);
     #alphabet {
+      position: relative;
+      z-index: 2;
       li {
         display: inline-block;
         list-style: none;
@@ -43,7 +49,7 @@ section#wikis {
         padding: 0 .6em 3px;
         text-transform: uppercase;
         opacity: .7;
-        color: $grey;
+        color: $grey-contrasted;
         font-weight: 600;
         transition: all .2s;
         &:hover,
