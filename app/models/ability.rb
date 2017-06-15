@@ -10,7 +10,7 @@ class Ability
 
     # Everybody
     can :read, Issue
-    can [:index, :letter], Wiki
+    can :letter, Wiki
     can :read, Archive
     can :index, Comment
 
