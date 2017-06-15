@@ -9,7 +9,7 @@
         <li <%= "class=active" if current_page?(issues_path) %>><%= link_to "problématiques", issues_path %></li>
         <li <%= "class=active" if current_page?(archives_path) %>><%= link_to "archives", archives_path %></li>
         <li><%= link_to "wiki", wiki_letter_path("a") %></li>
-        <li <%= "class=active" if current_page?(live_path) %>><span class="onlive">&#x25cf;</span><%= link_to "live", live_path %></li>
+        <li <%= "class=active" if current_page?(live_path) %>><% if on_live? %><span class="onlive">&#x25cf;</span><% end %><%= link_to "live", live_path %></li>
       </ul>
     </nav>
   </div>

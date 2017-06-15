@@ -1,8 +1,10 @@
 <section id="live">
+  <% if @json["pageInfo"]["totalResults"] >= 1 %>
   <div id="video-chat">
     <iframe src="https://www.youtube.com/embed/<%= @json["items"][0]["id"]["videoId"] %>" class="video"></iframe>
     <iframe src="https://www.youtube.com/live_chat?v=<%= @json["items"][0]["id"]["videoId"] %>&embed_domain=debagora.com" frameborder="0" class="chat"></iframe>
   </div>
+  <% end %>
 
   <div id="content">
     <span id="label">
@@ -13,9 +15,10 @@
     <% end %>
     </span>
 
+    <% if @json["pageInfo"]["totalResults"] >= 1 %>
     <h2><%= @json["items"][0]["snippet"]["title"] %></h2>
-
     <p><%= @json["items"][0]["snippet"]["description"] %></p>
+    <% end %>
 
   </div>
 

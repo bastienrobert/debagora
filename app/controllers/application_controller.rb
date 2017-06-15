@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
+  helper_method :on_live?
 
   # Devise parameters configuration
   before_action :configure_devise_parameters, if: :devise_controller?
@@ -23,10 +24,21 @@ class ApplicationController < ActionController::Base
 
   end
   def live
-    request = "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCpO0OSNAFLRUpGrNz-bJJHA&type=video&eventType=live&key=AIzaSyC2KdtINnW47ait53QbE82kpGqm8_zocz8"
+    request = "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCDZnUzKa_4cwALdD1BLTOkg&type=video&eventType=live&key=AIzaSyC2KdtINnW47ait53QbE82kpGqm8_zocz8"
     resp = Net::HTTP.get_response(URI.parse(request))
     data = resp.body
     @json = JSON.parse(data)
+  end
+  def on_live?
+    request = "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCDZnUzKa_4cwALdD1BLTOkg&type=video&eventType=live&key=AIzaSyC2KdtINnW47ait53QbE82kpGqm8_zocz8"
+    resp = Net::HTTP.get_response(URI.parse(request))
+    data = resp.body
+    @json = JSON.parse(data)
+    if @json["pageInfo"]["totalResults"] >= 1
+      return true
+    else
+      return false
+    end
   end
 
   # CanCan redirect if don't have permissions
