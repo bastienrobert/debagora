@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   helper_method :on_live?
+  require 'net/http'
 
   # Devise parameters configuration
   before_action :configure_devise_parameters, if: :devise_controller?
@@ -38,9 +39,16 @@ class ApplicationController < ActionController::Base
     resp = Net::HTTP.get_response(URI.parse(request))
     data = resp.body
     @json = JSON.parse(data)
-    if @json["pageInfo"]["totalResults"] >= 1
-      return true
-    else
+    puts "==============="
+    puts @json
+    puts "==============="
+    begin
+      if @json["pageInfo"]["totalResults"] >= 1
+        return true
+      else
+        return false
+      end
+    rescue
       return false
     end
   end
